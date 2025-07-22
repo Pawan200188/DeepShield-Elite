@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div >
+            <a href="/static/index.html"><img src="/static/img/Loginlogo.png" alt="Logo" class="logo" style="filter: invert(100%) brightness(100%); width: 6rem;"></a>
+        </div>
+        <div>
+            <form id="loginForm" class="login-form">
+                <h1>Welcome Back</h1>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox">
+                        <span class="remember-txt">Remember me</span>
+                    </div>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                <button type="submit" id="loginButton">
+                    <span class="button-text">Login</span>
+                    <div class="spinner"></div>
+                </button>
+                <p class="signup-link">
+                    Don't have an account? <a href="/static/signup.html">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="/static/login.js"></script>
+</body>
+</html>

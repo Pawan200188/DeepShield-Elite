@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepShield Elite - Image Object Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/static/index.html"><div class="logo">
+                <img src="/static/img/logo.png" alt="Logo">
+                <span>DeepShield<br><p style="font-size: 1rem;">Elite</p></span>
+            </div></a>
+            <nav>
+                <a href="/static/about.html"><button class="nav-btn">
+                    <span class="icon"><img src="/static/img/about.png" alt="About"></span>
+                </button></a>
+                <a href="/static/F&Q.html"><button class="nav-btn">
+                    <span class="icon"><img src="/static/img/faq.png" alt="faq"></span>
+                </button></a>
+                <a href="/static/contact.html"><button class="nav-btn">
+                    <span class="icon"><img src="/static/img/contact.png" alt=""></span>
+                </button></a>
+
+                <a href="/static/login.html" class="nav-buttons">Login</a>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="upload-container" id="dropZone">
+                <div class="upload-content">
+                    <div class="upload-icon"><img src="/static/img/upload.png" alt=""></div>
+                    <p>Drag and Drop</p>
+                    <p>or</p>
+                    <button class="browse-btn" id="browseBtn">Browse</button>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+            </div>
+            <!-- Preview and Result Section Side-by-Side -->
+            <div class="side-by-side-container" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
+                
+                <!-- Preview Section -->
+                <div id="preview-container" class="hidden" style="flex: 1; min-width: 300px;">
+                    <h3 style="text-align: center;">Preview</h3>
+                    <img id="preview-image" class="hidden" style="max-width: 60%;  padding-left: 15rem;" />
+                    <video id="preview-video" class="hidden" style="max-width: 100%;  padding-left: 8rem;" controls></video>
+                </div>
+
+                <!-- Result Section -->
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="text-align: center;">Analysis Result</h3>
+                    <div id="analysisDetails"></div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo footer-links">
+                    <img src="/static/img/logo.png" alt="logo" class="footer-logo-img" style="filter: invert(100%) brightness(100%); width: 5rem;">
+                    <a href="/static/index.html">DeepShield</a>
+                </div>
+        
+                <div class="footer-links">
+                    <a href="/static/about.html">About Us</a>
+                    <a href="/static/F&Q.html">F&Q</a>
+                    <a href="/static/contact.html">Contact</a>
+                </div>
+        
+                <div class="footer-contact">
+                    <p>Email: vidyut25@gmail.com</p>
+                    <p>Phone: +91 7887941386</p>
+                </div>
+        
+                <div class="footer-socials" style="filter: invert(100%) brightness(100%);">
+                    <a href="#"><img src="/static/img/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="/static/img/x.svg" alt="Twitter"></a>
+                    <a href="#"><img src="/static/img/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <p class="footer-bottom">© 2025 DeepShield. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/static/script.js?v=2"></script>
+</body>
+</html>
