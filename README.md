@@ -76,7 +76,7 @@ Utilize a hybrid deep learning approach that combines Convolutional Neural Netwo
 
 (2). Automate the Frame Analysis Workflow:
 Leverage Kaggle-based datasets containing both real and fake media. For videos, individual frames are extracted and passed through the detection model. For images, a single frame is directly analyzed. This streamlined process ensures consistent and scalable evaluation across various input types.
-![alt text](<"D:\DEEPFAKE_ALL\image\WhatsApp Image 2025-07-23 at 10.04.28_ad67c683.jpg">)
+
 
 (3). Implement a Robust Deep Learning Model:
 Use PyTorch to build and train the model, integrating advanced techniques in computer vision and sequence modeling. The model is designed to detect artifacts, facial inconsistencies, and unnatural pixel patterns often present in AI-generated content.
