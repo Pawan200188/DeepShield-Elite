@@ -269,6 +269,5 @@ In an era where manipulated digital content is increasingly difficult to detect,
 
 
 ## Team
-@Snehal Dnyane 
-
-@Poras Barhate
+SnehalDnyane 
+Poras2005
