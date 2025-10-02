@@ -93,19 +93,19 @@ Offer this tool as a potential aid for content creators, journalists, fact-check
 
 In summary, the tool is designed to bridge cutting-edge AI with practical usability — enabling everyday users to detect fake media effortlessly, while also demonstrating the power and potential of student-led innovation in addressing real-world problems.
 ## Project Pipeline
-Data Collection: Collected image and video deepfake datasets from Kaggle for training and testing.
+1. Data Collection: Collected image and video deepfake datasets from Kaggle for training and testing.
 
-Preprocessing: Extracted and resized video frames using OpenCV and processed images with Pillow.
+2. Preprocessing: Extracted and resized video frames using OpenCV and processed images with Pillow.
 
-Model Building: Developed a CNN–LSTM hybrid model using PyTorch to detect spatial and temporal inconsistencies.
+3. Model Building: Developed a CNN–LSTM hybrid model using PyTorch to detect spatial and temporal inconsistencies.
 
-Training & Evaluation: Trained the model and evaluated it using Accuracy, Precision, Recall, F1 Score, and Confusion Matrix via Scikit-learn.
+4. Training & Evaluation: Trained the model and evaluated it using Accuracy, Precision, Recall, F1 Score, and Confusion Matrix via Scikit-learn.
 
-Backend Development: Implemented Flask to handle file uploads, process data, and connect the model to the interface.
+5. Backend Development: Implemented Flask to handle file uploads, process data, and connect the model to the interface.
 
-Frontend Design: Built a user-friendly interface using HTML, CSS, and JavaScript for uploading media and displaying results.
+6. Frontend Design: Built a user-friendly interface using HTML, CSS, and JavaScript for uploading media and displaying results.
 
-Integration & Testing: Integrated the system end-to-end and tested it for real-time image and video deepfake detection.
+7. Integration & Testing: Integrated the system end-to-end and tested it for real-time image and video deepfake detection.
 
 ## Pre-processing WorkFlow
 🎞️ Video to Frame Conversion Process
