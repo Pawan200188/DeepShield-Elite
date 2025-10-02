@@ -106,20 +106,7 @@ Backend Development: Implemented Flask to handle file uploads, process data, and
 Frontend Design: Built a user-friendly interface using HTML, CSS, and JavaScript for uploading media and displaying results.
 
 Integration & Testing: Integrated the system end-to-end and tested it for real-time image and video deepfake detection.
-## Project Pipeline
-Data Collection: Collected image and video deepfake datasets from Kaggle for training and testing.
 
-Preprocessing: Extracted and resized video frames using OpenCV and processed images with Pillow.
-
-Model Building: Developed a CNN–LSTM hybrid model using PyTorch to detect spatial and temporal inconsistencies.
-
-Training & Evaluation: Trained the model and evaluated it using Accuracy, Precision, Recall, F1 Score, and Confusion Matrix via Scikit-learn.
-
-Backend Development: Implemented Flask to handle file uploads, process data, and connect the model to the interface.
-
-Frontend Design: Built a user-friendly interface using HTML, CSS, and JavaScript for uploading media and displaying results.
-
-Integration & Testing: Integrated the system end-to-end and tested it for real-time image and video deepfake detection.
 ## Pre-processing WorkFlow
 🎞️ Video to Frame Conversion Process
 To perform deepfake detection on videos, each video is first converted into a series of image frames. The following steps outline the frame extraction pipeline implemented using OpenCV:
