@@ -86,7 +86,7 @@ Use PyTorch to build and train the model, integrating advanced techniques in com
 Incorporate key evaluation metrics such as Accuracy, Precision, Recall, and F1-Score, calculated using Scikit-learn. Additionally, the system generates a confusion matrix for detailed performance analysis, helping users understand the model’s reliability.
 
 (5). Provide a User-Friendly Interface:
-Develop a clean and responsive web-based platform using HTML, CSS, and JavaScript, allowing users to upload images or videos for analysis. The backend, built using Flask, handles file input, model interaction, and result delivery seamlessly.
+Develop a clean and responsive web-based platform using HTML, CSS, and JavaScript, allowing users to upload images or videos for analysis. The backend, built using FastAPI, handles file input, model interaction, and result delivery seamlessly.
 
 (6). Contribute to Digital Safety and Misinformation Control:
 Offer this tool as a potential aid for content creators, journalists, fact-checkers, legal authorities, and the general public to validate the authenticity of digital content. Our broader mission is to promote ethical AI and support responsible content consumption in the digital era.
@@ -101,7 +101,7 @@ In summary, the tool is designed to bridge cutting-edge AI with practical usabil
 
 4. Training & Evaluation: Trained the model and evaluated it using Accuracy, Precision, Recall, F1 Score, and Confusion Matrix via Scikit-learn.
 
-5. Backend Development: Implemented Flask to handle file uploads, process data, and connect the model to the interface.
+5. Backend Development: Implemented FastAPI to handle file uploads, process data, and connect the model to the interface.
 
 6. Frontend Design: Built a user-friendly interface using HTML, CSS, and JavaScript for uploading media and displaying results.
 
@@ -208,7 +208,7 @@ The model returns a probability or class score.
 
 6. Display Result to User
 
-    The frontend receives the result via the Flask backend and displays it on the web interface.
+    The frontend receives the result via the FastAPI backend and displays it on the web interface.
 ## Models Usage and their Architecture
 
 Our Deepfake Detection Tool employs a hybrid deep learning approach that combines Convolutional Neural Networks (CNNs) with Long Short-Term Memory (LSTM) networks to accurately detect manipulated content in both images and videos. For video analysis, the model first extracts individual frames, and each frame is passed through a CNN that captures important spatial features. These features, representing visual patterns in each frame, are then fed into an LSTM network which analyzes the sequence of features over time. This combination enables the model to understand both spatial and temporal inconsistencies that often arise in deepfaked videos. For image-based detection, a standalone CNN architecture is used. The image is passed through several convolutional and pooling layers followed by fully connected layers to produce a binary classification—either "Real" or "Fake".
@@ -240,7 +240,7 @@ pip install scikit-learn
 
 6. NumPy – For array and tensor operations.
 
-7. Flask – Backend framework to handle model inference and API routes.
+7. FastAPI – Backend framework to handle model inference and API routes.
 
 8. HTML, CSS, JavaScript – For designing the frontend user interface.
 
@@ -252,9 +252,9 @@ pip install scikit-learn
 
 
 ## Conclusion
-In an era where manipulated digital content is increasingly difficult to detect, our Deepfake Detection Tool provides a practical and effective solution for identifying forged images and videos. By leveraging a hybrid deep learning architecture combining CNN and LSTM, along with powerful libraries like PyTorch, OpenCV, and Flask, we have built a system that can analyze spatial and temporal patterns to classify content as real or fake with high accuracy. The tool is designed to be user-friendly and scalable, making it suitable for applications in journalism, legal forensics, content moderation, and public safety. We believe this project is a small but meaningful step toward fostering trust and authenticity in digital media.
+In an era where manipulated digital content is increasingly difficult to detect, our Deepfake Detection Tool provides a practical and effective solution for identifying forged images and videos. By leveraging a hybrid deep learning architecture combining CNN and LSTM, along with powerful libraries like PyTorch, OpenCV, and FastAPI, we have built a system that can analyze spatial and temporal patterns to classify content as real or fake with high accuracy. The tool is designed to be user-friendly and scalable, making it suitable for applications in journalism, legal forensics, content moderation, and public safety. We believe this project is a small but meaningful step toward fostering trust and authenticity in digital media.
 
 
 ## Team
-    @SnehalDnyane
     @Poras2005
+    @SnehalDnyane
